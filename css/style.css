@@ -1,0 +1,124 @@
+/* Reset */
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* list-style: none; */
+}
+/* root variable */
+:root {
+  --color-primary: #ff5722;
+  --color-secondary-light: #fff6f2;
+  --color-secondary-dark: #ffa589;
+  --color-white: #fff;
+  --color-body: #e5e5e5;
+  --color-navbar: #f8f8f8;
+  --color-font-heading: #000;
+  --color-font-body: #333333;
+}
+/* body */
+body {
+  color: var(--color-body);
+  font-size: 1.4rem;
+}
+
+/* heading */
+h1,
+h2,
+h3 {
+  color: var(--color-font-heading);
+}
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2.2rem;
+}
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 3.5rem;
+  }
+}
+/* button */
+.btn {
+  font-size: 1.4rem;
+  padding: 19px 24px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--color-white);
+  margin: 1rem 0;
+  white-space: nowrap;
+}
+
+.btn--primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+.btn--secondary {
+  background-color: var(--color-secondary-dark);
+  color: var(--color-white);
+}
+.btn--blcok {
+  width: 100%;
+  font-size: 1.6rem;
+}
+@media (min-width: 1024px) {
+  .btn {
+    font-size: 1.6rem;
+  }
+  .btn--blcok {
+    font-size: 2rem;
+  }
+}
+/* badge */
+.badge {
+  border: 2px solid var(--color-primary);
+  padding: 9px 10px;
+  border-radius: 32px;
+  margin: 1rem;
+  font-size: 1.2rem;
+  color: var(--color-primary);
+  background-color: var(--color-secondary-light);
+  text-transform: uppercase;
+}
+
+.badge-primary {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+}
+@media (min-width: 1024px) {
+  .badge {
+    font-size: 1.4rem;
+  }
+}
+
+/* list */
+.list {
+  color: var(--color-font-heading);
+  font-size: 1.4rem;
+  list-style: none;
+  display: flex;
+  /* flex-direction: column; */
+}
+.list--vertical {
+  /* flex-direction: row; */
+}
+.list__item {
+  padding-left: 1rem;
+  display: inline;
+}
+.fa-check-square {
+  padding-left: 1rem;
+}
+@media (min-width: 1024) {
+  .list {
+    font-size: 1.8rem;
+  }
+}
