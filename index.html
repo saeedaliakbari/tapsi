@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/font.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
@@ -16,7 +16,26 @@
     <title>تپسی</title>
   </head>
   <body>
-    <h1>سایت تپسی</h1>
-    
+    <header class="header">
+      <nav class="header__main container">
+        <a class="header__icon" href="#"
+          ><img src="assets/images/tapsi.png" alt=""
+        /></a>
+        <!-- <i class="fas fa-bars nav__toggler"></i> -->
+        <div class="nav__toggler">
+          <div class="bar bar--one"></div>
+          <div class="bar bar--two"></div>
+          <div class="bar bar--three"></div>
+        </div>
+        <ul class="list list--vertical">
+          <li class="list__item"><a href="#">پشتیبانی</a></li>
+          <li class="list__item"><a href="#">خدمات کسب وکارها</a></li>
+          <li class="list__item"><a href="#">فرصت های شغلی</a></li>
+          <li class="list__item"><a href="#">وبلاگ</a></li>
+          <button class="btn btn--primary">دانلود تپسی</button>
+        </ul>
+      </nav>
+    </header>
   </body>
+  <script src="./js/main.js"></script>
 </html>
